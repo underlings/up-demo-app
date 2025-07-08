@@ -5,9 +5,9 @@
   "type": "module",
   "license": "MIT",
   "dependencies": {
-    "@underlings/platform": "../up-node",
     "cors": "^2.8.5",
     "dotenv": "^17.1.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "up-node": "https://github.com/underlings/up-node"
   }
 }

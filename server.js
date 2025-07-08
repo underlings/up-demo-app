@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import up from 'up-node';
 import homeRouter from './routes/home.js';
 import searchRouter from './routes/search.js';
-import up from '@underlings/platform';
 
 // Set your app token from environment variables
 // You can obtain this from the Underlings Developer Dashboard

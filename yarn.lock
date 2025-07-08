@@ -2,9 +2,6 @@
 # yarn lockfile v1
 
 
-"@underlings/platform@../up-node":
-  version "0.0.1"
-
 accepts@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-2.0.0.tgz#bbcf4ba5075467f3f2131eab3cffc73c2f5d7895"
@@ -498,6 +495,10 @@ unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
+
+"up-node@https://github.com/underlings/up-node":
+  version "0.0.1"
+  resolved "https://github.com/underlings/up-node#d62353e9e036c1ceb5476a4681d6dec74ad14715"
 
 vary@^1, vary@^1.1.2:
   version "1.1.2"
