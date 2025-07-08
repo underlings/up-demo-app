@@ -28,8 +28,8 @@ app.use('/home', homeRouter);
  */
 app.use('/search', searchRouter);
 
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
+app.listen(process.env.PORT, () => {
+  console.log('Server is running on port', process.env.PORT);
 });
 
 /**
