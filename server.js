@@ -2,8 +2,6 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import up from 'up-node';
-import homeRouter from './routes/home.js';
-import searchRouter from './routes/search.js';
 
 // Set your app token from environment variables
 // You can obtain this from the Underlings Developer Dashboard
@@ -13,20 +11,6 @@ const app = express();
 
 app.use(cors());
 app.use(express.static('www'));
-
-/**
- * To enable your app to display a home card on the Underlings Platform:
- * 1. Configure a home card endpoint
- * 2. Register the endpoint in the Underlings Developer Dashboard
- */
-app.use('/home', homeRouter);
-
-/**
- * To enable your app to display a search card on the Underlings Platform:
- * 1. Configure a search card endpoint
- * 2. Register the endpoint in the Underlings Developer Dashboard
- */
-app.use('/search', searchRouter);
 
 app.listen(process.env.PORT, () => {
   console.log('Server is running on port', process.env.PORT);
